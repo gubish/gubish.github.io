@@ -6,3 +6,30 @@
     background: #fcf17b
     display: table
     table-layout: fixed
+    box-sizing: border-box
+
+
+@media only screen and (max-width: $max_device_width)
+    .b-review
+        display: block
+        padding: 20px 15px
+
+        .b-review__item
+            display: block
+            padding: 0
+            margin-bottom: 40px
+
+            &:last-child
+                margin-bottom: 0
+
+        .b-review__text
+            padding-left: 20%
+
+        .b-review__title
+            padding-left: 20%
+            position: relative
+
+            img
+                position: absolute
+                left: 20px
+                top: 0
