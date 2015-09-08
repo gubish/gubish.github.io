@@ -1,0 +1,8 @@
+{
+    "levels_dir": "sass",
+    "blocks_dir": "blocks",
+    "new_files_extension": "sass",
+    "level_init_file": "_blocks",
+    "block_init_file": "_init",
+    "default_indent": "    "
+}
