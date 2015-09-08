@@ -6,13 +6,23 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="fonts/myriadproregular/stylesheet.css" type="text/css" charset="utf-8" />
     <link rel="stylesheet" href="fonts/pfregaltextpro/stylesheet.css" type="text/css" charset="utf-8" />
     <link href="css/normalize.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/common.css?v1" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
-    <div class="b-page">
+    <div class="b-page" id="page">
+        <div class="b-mobile-header">
+            <div class="b-mobile-header__menu" onClick="document.getElementById('page').classList.toggle('b-page_menu_open');"></div>
+            <div class="b-mobile-header__text">
+                Круглосуточно по Киеву
+            </div>
+            <div class="b-mobile-header__phone">
+                +380 (63) 775 85 39
+            </div>
+        </div>
         <div class="b-aside">
             <div class="b-aside__body">
                 <div class="b-aside__text">
