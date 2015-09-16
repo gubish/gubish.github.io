@@ -214,7 +214,7 @@
     .b-review .b-review__title {
       padding-left: 20%;
       position: relative;
-      margin-bottom: 15px; }
+      margin-bottom: 20px; }
       .b-review .b-review__title img {
         position: absolute;
         left: 20px;
@@ -254,8 +254,18 @@
     position: absolute;
     left: 100%;
     width: 80%; }
+    .b-aside .b-aside__desktop {
+      display: none; }
+    .b-aside .b-aside__mobile {
+      display: block; }
     .b-aside .b-aside__body {
-      position: static; } }
+      position: static;
+      max-width: inherit;
+      min-width: inherit;
+      width: auto;
+      padding-left: 20px;
+      padding-right: 0;
+      padding-top: 0; } }
 
 .b-aside__text {
   font-family: "pf_regal_text_proregular_a", Arial;
@@ -271,6 +281,12 @@
   min-width: 250px;
   padding: 8% 3%;
   box-sizing: border-box; }
+
+.b-aside__desktop {
+  display: block; }
+
+.b-aside__mobile {
+  display: none; }
 
 .b-pseudo-link {
   display: inline-block;
@@ -307,21 +323,23 @@
   width: 100%;
   box-sizing: border-box;
   -webkit-transition: margin-left 0.1s ease-in-out;
-          transition: margin-left 0.1s ease-in-out; }
+          transition: margin-left 0.1s ease-in-out;
+  height: 55px; }
 
 @media only screen and (max-width: 768px) {
   .b-mobile-header {
     display: block; } }
 
 .b-mobile-header__text {
-  color: #8d8d8d; }
+  color: #8d8d8d;
+  padding: 5px 0; }
 
 .b-mobile-header__phone {
   margin-top: 5px; }
 
 .b-mobile-header__menu {
   float: right;
-  margin: 18px 10px;
+  margin: 11px 10px;
   width: 25px;
   height: 3px;
   background: #000;
@@ -345,6 +363,63 @@
     height: 3px;
     background: #000;
     margin: 4px 0; }
+
+.b-menu {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.b-menu__item {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+.b-menu__link {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 15px 0; }
+  .b-menu__link:hover {
+    text-decoration: none; }
+
+.b-price-list {
+  display: block;
+  background: #fff;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  padding: 20px 0;
+  font-size: 18px;
+  outline: none;
+  letter-spacing: 1px; }
+  .b-price-list:hover {
+    text-decoration: none; }
+
+.b-phones-mobile {
+  display: none;
+  background: #fff;
+  text-align: center;
+  overflow: hidden; }
+
+@media only screen and (max-width: 768px) {
+  .b-phones-mobile {
+    display: block; }
+    .b-phones-mobile .b-phones__type {
+      display: inline-block;
+      width: 55px;
+      text-align: left;
+      vertical-align: middle; } }
+
+.b-phones-mobile__title {
+  display: block;
+  padding: 20px 0 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 1px; }
 
 .h-text-pro {
   font-family: "pf_regal_text_proregular_a", Arial; }

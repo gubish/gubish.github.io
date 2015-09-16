@@ -22,24 +22,51 @@
         </div>
         <div class="b-aside" onClick="document.getElementById('page').classList.remove('b-page_menu_open');">
             <div class="b-aside__body">
-                <div class="b-aside__text">
-                    Мы работаем с 2013 года, открыли свыше 3 000 замков, и заслужили
-                    <a href="#reviews" class="b-pseudo-link">благодарные отзывы</a>.
+                <div class="b-aside__desktop">
+                    <div class="b-aside__text">
+                        Мы работаем с 2013 года, открыли свыше 3 000 замков, и заслужили
+                        <a href="#reviews" class="b-pseudo-link">благодарные отзывы</a>.
+                    </div>
+                    <ul class="b-phones">
+                        <li class="b-phones__item">
+                            <div class="b-phones__type">Kievstar</div>
+                            +380 98 615-13-05
+                        </li>
+                        <li class="b-phones__item">
+                            <div class="b-phones__type">Life</div>
+                            +380 93 914-39-33
+                        </li>
+                        <li class="b-phones__item">
+                            <div class="b-phones__type">MTC</div>
+                            +380 95 818-06-39
+                        </li>
+                    </ul>
                 </div>
-                <ul class="b-phones">
-                    <li class="b-phones__item">
-                        <div class="b-phones__type">Kievstar</div>
-                        +380 98 615-13-05
-                    </li>
-                    <li class="b-phones__item">
-                        <div class="b-phones__type">Life</div>
-                        +380 93 914-39-33
-                    </li>
-                    <li class="b-phones__item">
-                        <div class="b-phones__type">MTC</div>
-                        +380 95 818-06-39
-                    </li>
-                </ul>
+                <div class="b-aside__mobile">
+                    <ul class="b-menu">
+                        <li class="b-menu__item">
+                            <a href="#tab1" class="b-menu__link">Вскрытие дверных замков</a>
+                        </li>
+                        <li class="b-menu__item">
+                            <a href="#tab2" class="b-menu__link">Вскрытие автомобилей</a>
+                        </li>
+                        <li class="b-menu__item">
+                            <a href="#tab3" class="b-menu__link">Вскрытие сейфов</a>
+                        </li>
+                        <li class="b-menu__item">
+                            <a href="#tab4" class="b-menu__link">Прайс лист (pdf)</a>
+                        </li>
+                        <li class="b-menu__item">
+                            <a href="#tab5" class="b-menu__link">Приемущества</a>
+                        </li>
+                        <li class="b-menu__item">
+                            <a href="#reviews" class="b-menu__link">Отзывы</a>
+                        </li>
+                        <li class="b-menu__item">
+                            <a href="#tab7" class="b-menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="b-content">
@@ -56,7 +83,7 @@
                 </div>
             </div>
             <div class="b-price">
-                <div class="b-price__cell">
+                <div class="b-price__cell" id="tab1">
                     <div class="b-price__image">
                         <img src="images/price1.png" width="140" height="140" alt="">
                     </div>
@@ -70,7 +97,7 @@
                         <div class="b-price__value">от 250 грн</div>
                     </div>
                 </div>
-                <div class="b-price__cell">
+                <div class="b-price__cell" id="tab2">
                     <div class="b-price__image">
                         <img src="images/price2.png" width="140" height="140" alt="">
                     </div>
@@ -84,7 +111,7 @@
                         <div class="b-price__value">от 200 грн</div>
                     </div>
                 </div>
-                <div class="b-price__cell">
+                <div class="b-price__cell" id="tab3">
                     <div class="b-price__image">
                         <img src="images/price3.png" width="140" height="140" alt="">
                     </div>
@@ -99,7 +126,10 @@
                     </div>
                 </div>
             </div>
-            <ul class="b-have">
+            <a href="./price.pdf" class="b-price-list" id="tab4">
+                ПРАЙС-ЛИСТ ВСЕХ УСЛУГ (PDF)
+            </a>
+            <ul class="b-have" id="tab5">
                 <li class="b-have__item">
                     <div class="b-have__image">
                         <img src="images/have1.png" width="75" height="75" alt="">
@@ -157,6 +187,25 @@
                     </div>
                 </li>
             </ul>
+            <div class="b-phones-mobile" id="tab7">
+                <div class="b-phones-mobile__title">
+                    Круглосуточно по Киеву
+                </div>
+                <ul class="b-phones">
+                    <li class="b-phones__item">
+                        <div class="b-phones__type">Kievstar</div>
+                        +380 98 615-13-05
+                    </li>
+                    <li class="b-phones__item">
+                        <div class="b-phones__type">Life</div>
+                        +380 93 914-39-33
+                    </li>
+                    <li class="b-phones__item">
+                        <div class="b-phones__type">MTC</div>
+                        +380 95 818-06-39
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
